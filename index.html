@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!----------Header Start---------->
+    <header id="home" class="vh-100 overflow-hidden">
+      <!----------Nav-Bar Start---------->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo-white.png" alt="web_logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="navbar-social ms-4">
+              <a href="https://twitter.com/" title="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.facebook.com/" title="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com/" title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!----------Nav-Bar End---------->
+      <!----------Home-Content Start---------->
+      <div class="home-content h-100 w-100 position-relative">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide carousel-fade w-100 h-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner w-100 h-100">
+            <div
+              class="carousel-item carousel-item-one w-100 active"
+              data-bs-interval="4000"
+            >
+              <div class="carousel-caption">
+                <h1>We build great brands.</h1>
+              </div>
+            </div>
+            <div
+              class="carousel-item carousel-item-two w-100"
+              data-bs-interval="4000"
+            >
+              <div class="carousel-caption">
+                <h1>Focused on strategy.</h1>
+              </div>
+            </div>
+            <div
+              class="carousel-item carousel-item-three w-100"
+              data-bs-interval="4000"
+            >
+              <div class="carousel-caption">
+                <h1>Advanced in digital works.</h1>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev carousel-keys"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <div class="carousel-hover position-absolute"></div>
+            <span
+              class="carousel-control-prev-icon carousel-keys-icon"
+              aria-hidden="true"
+              ><i class="fa-light fa-chevron-left"></i
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next carousel-keys"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <div class="carousel-hover position-absolute"></div>
+            <span
+              class="carousel-control-next-icon carousel-keys-icon d-flex align-content-center justify-content-center"
+              aria-hidden="true"
+              ><i class="fa-light fa-chevron-right"></i
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="down-btn">
+          <a href="#about"><span class="wheel"></span></a>
+        </div>
+        <div class="change-settings position-fixed">
+          <div class="change-color-btn">
+            <span
+              class="settings-btn d-flex align-items-center justify-content-center"
+            >
+              <i class="fa-duotone fa-gears text-white fs-4"></i>
+            </span>
+            <div class="change-color-menu">
+              <h3 class="mb-3">HEADER STYLE</h3>
+              <ul>
+                <li class="header-slide">
+                  <a href="#">Image Slideshow</a><i class="fas fa-check"></i>
+                </li>
+                <li class="header-image">
+                  <a href="#">Single Image</a>
+                </li>
+                <li class="header-video">
+                  <a href="#">Video Background</a>
+                </li>
+              </ul>
+              <h3>COLORS</h3>
+              <div class="colors-select d-flex">
+                <span class="red" title="Red"> </span>
+                <span class="blue" title="Blue"> </span>
+                <span class="green" title="Green"> </span>
+                <span class="turquoise" title="Turquoise"> </span>
+                <span class="purple" title="Purple"> </span>
+                <span class="orange" title="Orange"> </span>
+                <span class="yellow" title="Yellow"> </span>
+                <span class="grey" title="Grey"> </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------Home-Content End---------->
+    </header>
+    <!----------Header End---------->
+    <!----------About Section Start---------->
+    <section id="about" class="pad-5">
+      <div class="container">
+        <div class="cap">
+          <div class="cap-con">
+            <h2 class="cap-h">A</h2>
+            <p class="cap-p">About Us <span class="cap-line"></span></p>
+          </div>
+          <p class="sec-descrip text-center mx-auto">
+            Pellentesque elementum libero enim, eget gravida nunc laoreet et.
+            Nullam ac enim auctor, fringilla risus at, imperdiet turpis.
+            Pellentesque elementum libero enim.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <p class="mb-3">
+              Pellentesque vel elit egestas, pretium est ac, convallis orci.
+              Vivamus sem nisl, tristique vel fringilla vitae, efficitur at
+              eros. Duis aliquet aliquet pharetra. Suspendisse bibendum erat
+              quis gravida pulvinar. Phasellus vel eros porta, blandit dui ac,
+              viverra felis.
+            </p>
+            <p class="mb-3">
+              Nunc placerat iaculis pulvinar. Nullam auctor mauris sed urna
+              posuere volutpat. Mauris ut dui sit amet elit fermentum fermentum.
+              Fusce tincidunt diam at bibendum porta.
+            </p>
+            <p class="mb-3">
+              Aliquam nunc felis, sagittis eu purus non, interdum vehicula urna.
+              Vivamus congue diam sapien, eu pellentesque ipsum ultricies quis.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="skills">
+              <div class="bar">
+                <div class="progress-heading">
+                  <p class="progress-title">Branding</p>
+                  <div class="progress-value prog-80">80%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar prog-80" data-value="80"></div>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="progress-heading">
+                  <p class="progress-title">Web Design</p>
+                  <div class="progress-value prog-95">95%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar prog-95" data-value="95"></div>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="progress-heading">
+                  <p class="progress-title">Graphic Design</p>
+                  <div class="progress-value prog-85">85%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar prog-85" data-value="85"></div>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="progress-heading">
+                  <p class="progress-title">Development</p>
+                  <div class="progress-value prog-70">70%</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar prog-70" data-value="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------About Section End---------->
+    <!----------Our Team Start---------->
+    <section id="team" class="pad-5">
+      <div class="container">
+        <div class="cap">
+          <div class="cap-con">
+            <h2 class="cap-h">O</h2>
+            <p class="cap-p">Our Team <span class="cap-line"></span></p>
+          </div>
+          <p class="sec-descrip text-center mx-auto">
+            Vestibulum ante ipsum primis in faucibus orci. Morbi tincidunt urna
+            imperdiet tincidunt rhoncus. Sed mollis ligula non massa aliquam
+            faucibus.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="member-item">
+              <div class="member-img">
+                <img class="w-100" src="images/member-1.jpg" alt="someone" />
+                <div class="img-overlay">
+                  <div class="img-overlay-inner translate-middle-y">
+                    <a href="https://twitter.com/"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://dribbble.com/"
+                      ><i class="fab fa-dribbble"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-details mb-4">
+                <h5 class="member-title">Michael Broad</h5>
+                <span class="position">Web Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="member-item">
+              <div class="member-img">
+                <img class="w-100" src="images/member-2.jpg" alt="someone" />
+                <div class="img-overlay">
+                  <div class="img-overlay-inner translate-middle-y">
+                    <a href="https://twitter.com/"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://dribbble.com/"
+                      ><i class="fab fa-dribbble"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-details mb-4">
+                <h5 class="member-title">Michael Broad</h5>
+                <span class="position">Web Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="member-item">
+              <div class="member-img">
+                <img class="w-100" src="images/member-3.jpg" alt="someone" />
+                <div class="img-overlay">
+                  <div class="img-overlay-inner translate-middle-y">
+                    <a href="https://twitter.com/"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://dribbble.com/"
+                      ><i class="fab fa-dribbble"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-details mb-4">
+                <h5 class="member-title">Michael Broad</h5>
+                <span class="position">Web Designer</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="member-item">
+              <div class="member-img">
+                <img class="w-100" src="images/member-4.jpg" alt="someone" />
+                <div class="img-overlay">
+                  <div class="img-overlay-inner translate-middle-y">
+                    <a href="https://twitter.com/"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a href="https://dribbble.com/"
+                      ><i class="fab fa-dribbble"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="member-details mb-5">
+                <h5 class="member-title">Michael Broad</h5>
+                <span class="position">Web Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-5 d-flex justify-content-evenly">
+          <div class="col-md-6 col-md-offset-1 text-center-xs">
+            <h3 class="lowercase">Do you have any ideas?</h3>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 text-center-xs">
+            <a href="#contact" class="btn btn-contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------Our Team End---------->
+    <!----------Services Start---------->
+    <section id="services" class="pad-5">
+      <div class="container">
+        <div class="cap">
+          <div class="cap-con">
+            <h2 class="cap-h">S</h2>
+            <p class="cap-p">Services <span class="cap-line"></span></p>
+          </div>
+          <p class="sec-descrip text-center mx-auto">
+            Nullam ac enim auctor, fringilla risus at, imperdiet turpis.
+            Pellentesque elementum libero enim, eget gravida nunc laoreet et.
+            Pellentesque elementum libero enim.
+          </p>
+        </div>
+        <div class="row g-3 gy-4 flex-wrap">
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-laptop"></i>
+              </div>
+              <div class="service-text">
+                <h3>Responsive Layout</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-pen-ruler"></i>
+              </div>
+              <div class="service-text">
+                <h3>Modern Design</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-font-awesome"></i>
+              </div>
+              <div class="service-text">
+                <h3>Font Awesome Icons</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-envelopes-bulk"></i>
+              </div>
+              <div class="service-text">
+                <h3>Ajax Portfolio</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-gear"></i>
+              </div>
+              <div class="service-text">
+                <h3>Color Options</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-headset"></i>
+              </div>
+              <div class="service-text">
+                <h3>Audio Support</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-file-invoice"></i>
+              </div>
+              <div class="service-text">
+                <h3>Well Documented</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-video"></i>
+              </div>
+              <div class="service-text">
+                <h3>Background Videos</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="service-item d-flex">
+              <div class="icon">
+                <i class="fa-light fa-waveform-lines"></i>
+              </div>
+              <div class="service-text">
+                <h3>Intro Slider</h3>
+                <p>
+                  Ferri reque integre mea ut, eu eos vide errem noluise se.
+                  Putent laoreet et ius utroque dissentias ut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------Services End---------->
+    <!----------Testimonial Start---------->
+    <section id="testimonial" class="pad-5">
+      <div class="container">
+        <div class="cap">
+          <div class="cap-con">
+            <h2 class="cap-h">C</h2>
+            <p class="cap-p">Client Reviews <span class="cap-line"></span></p>
+          </div>
+          <p class="sec-descrip text-center mx-auto">
+            Donec purus est, tincidunt eu sodales quis, vehicula quis enim.
+            Morbi dapibus, tellus a gravida faucibus, elit ipsum sollicitudin
+            risus, id ultricies arcu neque eget velit.
+          </p>
+        </div>
+        <div class="testimonial-slider">
+          <div id="testimonialIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#testimonialIndicators"
+                data-bs-slide-to="0"
+                aria-current="true"
+                aria-label="Slide 1"
+              >
+                <img
+                  src="images/client-8.png"
+                  class="rounded-circle w-100"
+                  alt="client"
+                />
+              </button>
+              <button
+                type="button"
+                data-bs-target="#testimonialIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              >
+                <img
+                  src="images/client-9.png"
+                  class="rounded-circle w-100"
+                  alt="client"
+                />
+              </button>
+              <button
+                type="button"
+                data-bs-target="#testimonialIndicators"
+                data-bs-slide-to="2"
+                class="active"
+                aria-label="Slide 3"
+              >
+                <img
+                  src="images/client-1.png"
+                  class="rounded-circle w-100"
+                  alt="client"
+                />
+              </button>
+              <button
+                type="button"
+                data-bs-target="#testimonialIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              >
+                <img
+                  src="images/client-2.png"
+                  class="rounded-circle w-100"
+                  alt="client"
+                />
+              </button>
+              <button
+                type="button"
+                data-bs-target="#testimonialIndicators"
+                data-bs-slide-to="4"
+                aria-label="Slide 5"
+              >
+                <img
+                  src="images/client-3.png"
+                  class="rounded-circle w-100"
+                  alt="client"
+                />
+              </button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="testimonial-caption">
+                  <div class="client-info">
+                    <h3>Hugh Tace</h3>
+                    <span>From Capital</span>
+                  </div>
+                  <div>
+                    <div class="testimonial-box">
+                      <p>
+                        <i class="fas fa-quote-left"></i> Aenean varius accumsan
+                        eros, id molestie leo vestibulum a. Ut semper dictum
+                        feugiat. Integer tincidunt interdum eros ut accumsan.
+                        <i class="fas fa-quote-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-caption">
+                  <div class="client-info">
+                    <h3>Chris Wort</h3>
+                    <span>From Sylhost</span>
+                  </div>
+                  <div>
+                    <div class="testimonial-box">
+                      <p>
+                        <i class="fas fa-quote-left"></i> Morbi viverra ultrices
+                        magna vel egestas. Suspendisse rutrum, lacus nec sodales
+                        gravida, augue ante sollicitudin sem.
+                        <i class="fas fa-quote-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <div class="testimonial-caption">
+                  <div class="client-info">
+                    <h3>Martin Jack</h3>
+                    <span>From Hooli</span>
+                  </div>
+                  <div>
+                    <div class="testimonial-box">
+                      <p>
+                        <i class="fas fa-quote-left"></i> Aenean sit amet est
+                        orci. Aenean at nisi eget nulla lobortis commodo. Nam
+                        eget lorem in ex aliquam dapibus.
+                        <i class="fas fa-quote-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-caption">
+                  <div class="client-info">
+                    <h3>David Dowsy</h3>
+                    <span>From Globex</span>
+                  </div>
+                  <div>
+                    <div class="testimonial-box">
+                      <p>
+                        <i class="fas fa-quote-left"></i> Suspendisse non velit
+                        lacus. Mauris efficitur lorem a justo semper, ut
+                        suscipit ligula malesuada. Donec dui nulla.
+                        <i class="fas fa-quote-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-caption">
+                  <div class="client-info">
+                    <h3>Doglas Kosta</h3>
+                    <span>From Soylent</span>
+                  </div>
+                  <div>
+                    <div class="testimonial-box">
+                      <p>
+                        <i class="fas fa-quote-left"></i> Vestibulum lectus
+                        massa, volutpat ut tristique nec, volutpat in turpis. In
+                        vehicula tempus odio. Nullam enim ligula.
+                        <i class="fas fa-quote-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------Testimonial End---------->
+    <!----------Contact Start---------->
+    <section id="contact" class="pad-5">
+      <div class="container">
+        <div class="cap">
+          <div class="cap-con">
+            <h2 class="cap-h">G</h2>
+            <p class="cap-p">Get In Touch <span class="cap-line"></span></p>
+          </div>
+          <p class="sec-descrip text-center mx-auto">
+            Mauris at tempus mi, ut iaculis dui. Integer laoreet mattis justo
+            nec pretium. Ut nibh elit, fermentum vel hendrerit vel, dictum nec
+            velit. Morbi volutpat suscipit.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 contact-details res-margin">
+            <h3>Get answers and advices from professional consultants.</h3>
+            <div class="contact-details-content">
+              <div class="icon"><i class="fa-light fa-map"></i></div>
+              <div class="contact-text">
+                <h4>Address</h4>
+                <p>1650 Lombard Street, San Francisco, CA 94123</p>
+              </div>
+            </div>
+            <div class="contact-details-content">
+              <div class="icon"><i class="fa-light fa-mobile"></i></div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <p>+1 (415) 876-3250 / +1 (415) 876-3251</p>
+              </div>
+            </div>
+            <div class="contact-details-content border-0">
+              <div class="icon"><i class="fa-light fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Say Hello</h4>
+                <p>
+                  <a href="mailto:email@sitename.com">email@sitename.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="contact-form">
+              <div class="field">
+                <input
+                  type="text"
+                  name="name"
+                  class="name-field"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="email"
+                  name="email"
+                  class="email-field"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  name="phone"
+                  class="phone-field"
+                  placeholder="Phone"
+                />
+              </div>
+              <div class="field">
+                <textarea
+                  name="message"
+                  class="message-field"
+                  placeholder="Message"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="btn btn-submit"
+                  id="contact-submit"
+                >
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------Contact End---------->
+    <!----------Footer Start---------->
+    <footer id="#footer" class="footer">
+      <a class="go-to-top" href="#home"><i class="fas fa-chevron-up"></i></a>
+
+      <div class="footer-lists">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="footer-logo mb-5">
+                <a href="#" title="Angora">
+                  <img src="images/web-icon.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-3 col-sm-6 res-margin">
+              <div class="footer-lists">
+                <h5>Contact Info</h5>
+
+                <div class="text-list">
+                  <p>
+                    1650 Lombard Street,<br />
+                    San Francisco, CA 94123
+                  </p>
+                  <p>
+                    +1 (415) 876-3250<br />
+                    <a href="mailto:email@sitename.com">email@sitename.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="useful-list">
+                <h5>Useful Links</h5>
+
+                <ul class="footer-menu">
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms &amp; Conditions</a></li>
+                  <li><a href="#">Affiliate Program</a></li>
+                  <li><a href="#">Careers</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 res-margin">
+              <div class="footer-lists">
+                <h5>Recent Posts</h5>
+
+                <ul class="footer-menu">
+                  <li><a href="#">Sunset in Venice</a></li>
+                  <li><a href="#">Aerial View of Village</a></li>
+                  <li><a href="#">Lighted Concrete City</a></li>
+                  <li><a href="#">The Little Ghost</a></li>
+                  <li><a href="#">Royal Oats ft. Waldo</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-lists">
+                <h5>Popular Tags</h5>
+
+                <div class="tags d-flex flex-wrap">
+                  <a href="#" class="tag">HTML5</a>
+                  <a href="#" class="tag">CSS3</a>
+                  <a href="#" class="tag">jQuery</a>
+                  <a href="#" class="tag">UX / UI</a>
+                  <a href="#" class="tag">Web</a>
+                  <a href="#" class="tag">Graphic</a>
+                  <a href="#" class="tag">Design</a>
+                  <a href="#" class="tag">Development</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="social-footer">
+                <a href="https://www.twitter.com/" title="Twitter"
+                  ><i class="fab fa-twitter fa-fw"></i
+                ></a>
+                <a href="https://www.facebook.com/" title="Facebook"
+                  ><i class="fab fa-facebook-f fa-fw"></i
+                ></a>
+                <a href="https://www.instagram.com/" title="Instagram"
+                  ><i class="fab fa-instagram fa-fw"></i
+                ></a>
+                <a href="https://www.dribbble.com/" title="Dribbble"
+                  ><i class="fab fa-dribbble fa-fw"></i
+                ></a>
+                <a href="https://www.pinterest.com/" title="Pinterest"
+                  ><i class="fab fa-pinterest fa-fw"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <p class="copyrights">
+                Copyright © 2023 <a href="#">Muhammad Rashed</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!----------Footer End---------->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
